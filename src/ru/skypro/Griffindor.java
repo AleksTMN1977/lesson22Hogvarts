@@ -1,15 +1,17 @@
 package ru.skypro;
-public class Griffindor {
 
-        private int nobility;
-        private int honor;
-        private int courage;
+public class Griffindor extends Hogwarts {
+    private int nobility;
+    private int honor;
+    private int courage;
 
-    public Griffindor(int nobility, int honor, int courage) {
+    public Griffindor(String name, int powerOfMagic, int nobility, int honor, int courage) {
+        super(name, powerOfMagic);
         this.nobility = nobility;
         this.honor = honor;
         this.courage = courage;
     }
+
 
     public int getNobility() {
         return nobility;
@@ -35,3 +37,5 @@ public class Griffindor {
         this.courage = courage;
     }
 }
+
+
