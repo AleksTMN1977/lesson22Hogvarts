@@ -5,33 +5,31 @@ import javax.xml.namespace.QName;
 public class Hogwarts {
     private String name;
     private int powerOfMagic;
+    private int teleport;
 
-    public Hogwarts(String name, int powerOfMagic) {
+    public Hogwarts(String name, int powerOfMagic, int teleport) {
         this.name = name;
         this.powerOfMagic = powerOfMagic;
+        this.teleport = teleport;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getPowerOfMagic() {
         return powerOfMagic;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPowerOfMagic(int powerOfMagic) {
-        this.powerOfMagic = powerOfMagic;
+    public int getTeleport() {
+        return teleport;
     }
 
     @Override
     public String toString() {
-        return "Hogwarts{" +
-                "name='" + name + '\'' +
-                ", powerOfMagic=" + powerOfMagic +
-                '}';
-    }
-
-    private String getName() {
-        return name;
+        return "Ученик Хогвартса {" +
+                "Имя '" + name + '\'' +
+                ", Сила магии (" + powerOfMagic + ") " +
+                ", Трансгрессия (" + teleport + ")" + "}";
     }
 }

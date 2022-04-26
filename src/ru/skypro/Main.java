@@ -3,30 +3,47 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
-        Hogwarts[] student = {
-                new Hogwarts("Гарри Поттер", 100),
-                new Hogwarts("Гермиона Грейнджер", 95),
-                new Hogwarts("Рон Уизли", 90),
-                new Hogwarts("Драко Малфой", 93),
-                new Hogwarts("Грэхэм Монтегю", 44),
-                new Hogwarts("Грегори Гойл", 58),
-                new Hogwarts("Захария Смит", 76),
-                new Hogwarts("Седрик Диггори", 82),
-                new Hogwarts("Джастин Финч-Флетчли", 50),
-                new Hogwarts("Чжоу Чанг", 56),
-                new Hogwarts("Падма Патил", 28),
-                new Hogwarts("Маркус Белби", 61),
+        Hogwarts[] hogwarts = {
+                new Hogwarts("Гарри Поттер", 95, 81),
+                new Hogwarts("Гермиона Грейнджер", 97, 88),
+                new Hogwarts("Рон Уизли", 70, 69),
+                new Hogwarts("Драко Малфой", 93, 90),
+                new Hogwarts("Грэхэм Монтегю", 44, 82),
+                new Hogwarts("Грегори Гойл", 58, 55),
+                new Hogwarts("Захария Смит", 76, 61),
+                new Hogwarts("Седрик Диггори", 82, 72),
+                new Hogwarts("Джастин Финч-Флетчли", 50, 33),
+                new Hogwarts("Чжоу Чанг", 56, 44),
+                new Hogwarts("Падма Патил", 28, 60),
+                new Hogwarts("Маркус Белби", 61, 29),
         };
         Griffindor[] griffindors = {
-                new Griffindor("Гарри Поттер", 100, 82, 58,5),
-                new Griffindor("Гермиона Грейнджер", 95, 85, 39,8),
-                new Griffindor("Рон Уизли", 90, 66, 54,6),
+                new Griffindor("Гарри Поттер", 95, 81, 58, 59, 40),
+                new Griffindor("Гермиона Грейнджер", 97, 88, 39, 80, 69),
+                new Griffindor("Рон Уизли", 70, 69, 54, 61, 49),
+        };
+        Slizerin[] slizerins = {
+                new Slizerin("Драко Малфой", 93, 90, 33, 24, 85, 77, 47),
+                new Slizerin("Грэхэм Монтегю", 44, 82, 28, 60, 91, 78, 69),
+                new Slizerin("Грегори Гойл", 58, 55, 89, 28, 81, 79, 74),
         };
         Puffenduy[] puffenduys = {
-                new Puffenduy("Драко Малфой", 93,22,33,24),
-                new Puffenduy("Грэхэм Монтегю", 44,33,28,60),
-                new Puffenduy("Грегори Гойл", 58,56,89,28),
+                new Puffenduy("Захария Смит", 76, 61, 33, 24, 22),
+                new Puffenduy("Седрик Диггори", 82, 72, 28, 60, 8),
+                new Puffenduy("Джастин Финч-Флетчли", 50, 33, 89, 28, 66),
         };
+        Kogtevran[] kogtevrans = {
+                new Kogtevran("Чжоу Чанг", 56, 44, 52, 5, 40, 65),
+                new Kogtevran("Падма Патил", 28, 60, 55, 22, 64, 56),
+                new Kogtevran("Маркус Белби", 61, 29, 47, 78, 18, 85),
+        };
+
+        PrintService printService = new PrintService();
+        printService.print(hogwarts);
+        printService.print(griffindors);
+        printService.print(puffenduys);
+        printService.print(kogtevrans);
+        printService.print(slizerins);
     }
 
 }
