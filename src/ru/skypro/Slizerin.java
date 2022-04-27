@@ -15,7 +15,6 @@ public class Slizerin extends Hogwarts {
         this.ambiz = ambiz;
         this.nahodh = nahodh;
         this.vlast = vlast;
-
     }
 
     public int getHitr() {
