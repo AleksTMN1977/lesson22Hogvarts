@@ -18,7 +18,7 @@ public class Main {
                 new Hogwarts("Маркус Белби", 61, 29),
         };
         Griffindor[] griffindors = {
-                new Griffindor("Гарри Поттер", 95, 81, 58, 59, 40),
+                new Griffindor("Гарри Поттер", 95, 81, 58, 59, 66),
                 new Griffindor("Гермиона Грейнджер", 97, 88, 39, 80, 69),
                 new Griffindor("Рон Уизли", 70, 69, 54, 61, 49),
         };
@@ -44,8 +44,13 @@ public class Main {
         printService.print(puffenduys);
         printService.print(kogtevrans);
         printService.print(slizerins);
-    }
 
+        Method.bestStudentGriffindor(griffindors[0], griffindors[2]);
+        Method.bestStudentKogtevran(kogtevrans[0], kogtevrans[2]);
+        Method.bestStudentPuffenduy(puffenduys[0], puffenduys[1]);
+        Method.bestStudentSlizerin(slizerins[0], slizerins[1]);
+        Method.bestStudentHogwarts(hogwarts[0], hogwarts[0]);
+   }
 }
 
 

@@ -12,6 +12,7 @@ public class PrintService {
                     "Честь (" + griffindor.getHonor() + ") " +
                     "Мужество (" + griffindor.getCourage() + ")");
         }
+        System.out.println();
     }
 
     public void print(Hogwarts[] hogwarts) {
@@ -19,6 +20,7 @@ public class PrintService {
             Hogwarts hogwart = hogwarts[i];
             System.out.println((i + 1) + ". " + hogwart.toString());
         }
+        System.out.println();
     }
 
     public void print(Puffenduy[] puffenduys) {
@@ -33,6 +35,7 @@ public class PrintService {
                     "Вера (" + puffenduy.getFaith() + ") " +
                     "Честность (" + puffenduy.getHonesty() + ")");
         }
+        System.out.println();
     }
 
     public void print(Kogtevran[] kogtevrans) {
@@ -48,6 +51,7 @@ public class PrintService {
                     "Остроумие (" + kogtevran.getOstroum() + ") " +
                     "Творчество (" + kogtevran.getTvorch() + ")");
         }
+        System.out.println();
     }
 
     public void print(Slizerin[] slizerins) {
@@ -64,5 +68,6 @@ public class PrintService {
                     "Находчивость (" + slizerin.getNahodh() + ") " +
                     "Жажда власти (" + slizerin.getVlast() + ")");
         }
+        System.out.println();
     }
 }
